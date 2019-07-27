@@ -3,5 +3,6 @@ module "kubeadm-token" {
 }
 
 output "new_token" {
-  value = "${module.kubeadm-token.token}"
+  value = module.kubeadm-token.token
 }
+
